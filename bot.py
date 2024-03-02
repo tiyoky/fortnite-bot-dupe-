@@ -21,7 +21,7 @@ fortnite_db = SqliteDatabase('data/fortnite.db')
 
 
 async def get_prefix(client, message):
-    prefixes = [client.prefix]
+    prefixes = $
     if isinstance(message.channel, discord.abc.PrivateChannel):
         return commands.when_mentioned_or(*prefixes)(bot, message)
     db = client.get_cog('Database')
